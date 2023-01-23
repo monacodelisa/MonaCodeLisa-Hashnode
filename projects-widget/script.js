@@ -1,38 +1,7 @@
-const projectsContainer = document.querySelector(".projects-container");
-const projectsGallery = document.querySelector(".projects-gallery");
 const mainImgWrapper = document.querySelector(".main-image-wrapper");
 const mainImgCaption = document.querySelector(".main-img-caption");
 const threeGridWrapper = document.querySelectorAll(".three-grid-img-wrapper");
-const threeGridImg = document.querySelectorAll(".three-grid");
 const threeGridImgCaption = document.querySelectorAll(".three-grid-img-caption");
-const h1 = document.querySelectorAll("h1");
-const h2 = document.querySelectorAll("h2");
-const links = document.querySelectorAll("a");
-const paragraphs = document.querySelectorAll("p");
-
-
-//Global Styles
-
-projectsContainer.setAttribute("style", "display: flex; flex-direction: column; justify-content: center; align-items: center;")
-
-// carousel.setAttribute("style", "display: flex; justify-content: center; align-items: center; min-height: 10rem;")
-
-h1.forEach(heading => {
-	heading.style.cssText = "margin: 0; font-family: 'Ubuntu', sans-serif;"
-});
-
-h2.forEach(heading => {
-	heading.style.cssText = "margin: 0; font-family: 'Ubuntu', sans-serif;"
-}); 
-
-links.forEach(link => {
-	link.style.cssText = "color: white;"
-});
-
-paragraphs.forEach(p => {
-	p.style.cssText = "color: white; font-family: 'Ubuntu', sans-serif; margin: 0.3rem 0 0;"
-});
-
 
 // Carousel
 const track = document.querySelector(".carousel__track");
@@ -119,6 +88,15 @@ dotsNav.addEventListener('click', e => {
     hideShowArrows(slides, prevBtn, nextBtn, targetIndex);
 })
 
+// Hover 
+mainImgWrapper.addEventListener('mouseover', () => {
+    mainImgCaption.style.cssText = "position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; background-color: #373737a8; color: white; font-size: 1.3rem; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; border-radius: 1rem; cursor: pointer;"
+});
+
+mainImgWrapper.addEventListener('mouseleave', () => {
+    mainImgCaption.style.cssText = "display: none"
+});
+
 // Main Image
 
 // mainImgWrapper.style.cssText = "width: 45vw; min-height: 55vh; margin: auto;position: relative;"
@@ -137,15 +115,8 @@ dotsNav.addEventListener('click', e => {
 
 
 // Gallery Grid 
-
-projectsGallery.setAttribute("style", "display: flex; flex-wrap: wrap; justify-content: center; align-items: center;")
-
 threeGridWrapper.forEach(wrapper => {
 	wrapper.style.cssText = "position: relative; width: 30%; margin: 1rem;"
-})
-
-threeGridImg.forEach(image => {
-	image.style.cssText = "width: 100%; border-radius: 1rem;"
 })
 
 threeGridImgCaption.forEach(caption => {
@@ -153,7 +124,7 @@ threeGridImgCaption.forEach(caption => {
 })
 
 threeGridWrapper.forEach((wrapper, index) => {
-    wrapper.addEventListener("mouseover", function() {
+    wrapper.addEventListener("mouseover", () => {
         let imgCaption = threeGridImgCaption[index];
         imgCaption.style.cssText = "position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; background-color: #373737a8; color: white; font-size: 1.3rem; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; border-radius: 1rem; cursor: pointer;";
     });
@@ -161,7 +132,7 @@ threeGridWrapper.forEach((wrapper, index) => {
 
 
 threeGridWrapper.forEach((wrapper, index) => {
-    wrapper.addEventListener("mouseout", function() {
+    wrapper.addEventListener("mouseout", () => {
         let imgCaption = threeGridImgCaption[index];
         imgCaption.style.cssText = "display: none;";
     });
