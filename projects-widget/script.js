@@ -89,6 +89,9 @@ dotsNav.addEventListener('click', e => {
 })
 
 // Hover 
+
+mainImgCaption.style.cssText = "display: none"
+
 mainImgWrapper.addEventListener('mouseover', () => {
     mainImgCaption.style.cssText = "position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; background-color: #373737a8; color: white; font-size: 1.3rem; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; border-radius: 1rem; cursor: pointer;"
 });
