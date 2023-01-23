@@ -1,21 +1,17 @@
 const projectsContainer = document.querySelector(".projects-container");
 const projectsGallery = document.querySelector(".projects-gallery");
-const carousel = document.querySelector(".carousel");
+// const carousel = document.querySelector(".carousel");
 const mainImgWrapper = document.querySelector(".main-image-wrapper");
-// const mainImg = document.querySelector(".main-img");
 const mainImgCaption = document.querySelector(".main-img-caption");
 const threeGridWrapper = document.querySelectorAll(".three-grid-img-wrapper");
 const threeGridImg = document.querySelectorAll(".three-grid");
 const threeGridImgCaption = document.querySelectorAll(".three-grid-img-caption");
 const h1 = document.querySelectorAll("h1");
 const h2 = document.querySelectorAll("h2");
-const listItem = document.querySelectorAll("li");
+// const listItem = document.querySelectorAll("li");
 const links = document.querySelectorAll("a");
 const paragraphs = document.querySelectorAll("p");
 
-let link = document.createElement("a");
-link.href = "https://www.example.com";
-link.innerHTML = "Go to Example.com";
 
 //Global Styles
 
@@ -45,7 +41,19 @@ paragraphs.forEach(p => {
 // });
 
 
-// Main Image Carousel
+// Carousel
+const track = document.querySelector(".carousel__track");
+const slides = Array.from(track.children);
+const nextBtn = document.querySelector(".carousel__button--right");
+const prevBtn = document.querySelector(".carousel__button--left");
+const dotsNav = document.querySelector(".carousel__nav");
+const dots = Array.from(dotsNav.children);
+
+const slideWidth = slides[0].getBoundingClientRect().width;
+console.log(slideWidth)
+// When I click left, move slides to the left
+// When I click right, move slides to the right
+// When I click the nav indicators move to corresponding slide
 
 
 // Main Image

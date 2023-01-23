@@ -3,6 +3,7 @@
     width: 50vw;
     height: 58.7vh;
     margin: 0 auto;
+    padding: 1rem 0 3rem;
 }
 
 .carousel_image {
@@ -16,13 +17,13 @@
     height: 100%;
 }
 
-.courasel__track {
+.carousel__track {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.courasel__slide {
+.carousel__slide {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -33,7 +34,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    border: 0;
+    border: none;
     background-color: transparent;
     cursor: pointer;
 }
@@ -67,4 +68,9 @@
     height: 1rem;
     width: 1rem;
     margin: 0.7rem;
+    cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+    background-color: #5b5b5b;
 }
