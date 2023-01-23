@@ -7,17 +7,36 @@ const mainImgCaption = document.querySelector(".main-img-caption");
 const threeGridWrapper = document.querySelectorAll(".three-grid-img-wrapper");
 const threeGridImg = document.querySelectorAll(".three-grid");
 const threeGridImgCaption = document.querySelectorAll(".three-grid-img-caption");
-const headings = document.querySelectorAll("h1");
+const h1 = document.querySelectorAll("h1");
+const h2 = document.querySelectorAll("h2");
+const listItem = document.querySelectorAll("li");
 const links = document.querySelectorAll("a");
 
 let link = document.createElement("a");
 link.href = "https://www.example.com";
 link.innerHTML = "Go to Example.com";
 
+//Global Styles
+
 projectsContainer.setAttribute("style", "display: flex; flex-direction: column; justify-content: center; align-items: center;")
 
 projectsMain.setAttribute("style", "display: flex; justify-content: center; align-items: center;")
 
+h1.forEach(heading => {
+	heading.style.cssText = "margin: 0; font-family: 'Ubuntu', sans-serif;"
+});
+
+h2.forEach(heading => {
+	heading.style.cssText = "margin: 0; font-family: 'Ubuntu', sans-serif;"
+}); 
+
+links.forEach(link => {
+	link.style.cssText = "color: white;"
+});
+
+listItem.forEach(li => {
+	li.style.cssText = "text-align: left"
+});
 
 
 // Main Image
@@ -69,14 +88,6 @@ threeGridWrapper.forEach((wrapper, index) => {
 });
 
 
-//General Styles
-headings.forEach(heading => {
-	heading.style.cssText = "margin: 0; font-family: 'Ubuntu', sans-serif;"
-});
-
-links.forEach(link => {
-	link.style.cssText = "color: white;"
-});
 
 
 
