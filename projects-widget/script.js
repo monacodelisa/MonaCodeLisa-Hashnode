@@ -21,7 +21,7 @@ link.innerHTML = "Go to Example.com";
 
 projectsContainer.setAttribute("style", "display: flex; flex-direction: column; justify-content: center; align-items: center;")
 
-projectsMain.setAttribute("style", "display: flex; justify-content: center; align-items: center;")
+projectsMain.setAttribute("style", "display: flex; justify-content: center; align-items: center; min-height: 10rem;")
 
 h1.forEach(heading => {
 	heading.style.cssText = "margin: 0; font-family: 'Ubuntu', sans-serif;"
@@ -45,21 +45,24 @@ listItem.forEach(li => {
 });
 
 
+// Main Image Carousel
+
+
 // Main Image
 
-mainImgWrapper.style.cssText = "width: 45vw; min-height: 55vh; margin: auto;position: relative;"
+// mainImgWrapper.style.cssText = "width: 45vw; min-height: 55vh; margin: auto;position: relative;"
 
-mainImg.style.cssText = "width: 100%; margin-bottom: 2rem; border-radius: 1rem;"
+// mainImg.style.cssText = "width: 100%; margin-bottom: 2rem; border-radius: 1rem;"
 
-mainImgCaption.style.cssText = "display: none"
+// mainImgCaption.style.cssText = "display: none"
 
-mainImgWrapper.addEventListener("mouseover", function() {
-    mainImgCaption.style.cssText = "position: absolute; top: 20%; left: 0; width: 100%; height: 50%; overflow: hidden; background-color: #373737a8; color: white; font-size: 1.3rem; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer"
-});
+// mainImgWrapper.addEventListener("mouseover", function() {
+//     mainImgCaption.style.cssText = "position: absolute; top: 20%; left: 0; width: 100%; height: 50%; overflow: hidden; background-color: #373737a8; color: white; font-size: 1.3rem; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer"
+// });
 
-mainImgWrapper.addEventListener("mouseout", function() {
-    mainImgCaption.style.cssText = "display: none" 
-});
+// mainImgWrapper.addEventListener("mouseout", function() {
+//     mainImgCaption.style.cssText = "display: none" 
+// });
 
 
 // Gallery Grid 
