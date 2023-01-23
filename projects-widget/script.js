@@ -1,8 +1,8 @@
 const projectsContainer = document.querySelector(".projects-container");
 const projectsGallery = document.querySelector(".projects-gallery");
-const projectsMain = document.querySelector(".projects-main");
+const carousel = document.querySelector(".carousel");
 const mainImgWrapper = document.querySelector(".main-image-wrapper");
-const mainImg = document.querySelector(".main-img");
+// const mainImg = document.querySelector(".main-img");
 const mainImgCaption = document.querySelector(".main-img-caption");
 const threeGridWrapper = document.querySelectorAll(".three-grid-img-wrapper");
 const threeGridImg = document.querySelectorAll(".three-grid");
@@ -21,7 +21,7 @@ link.innerHTML = "Go to Example.com";
 
 projectsContainer.setAttribute("style", "display: flex; flex-direction: column; justify-content: center; align-items: center;")
 
-projectsMain.setAttribute("style", "display: flex; justify-content: center; align-items: center; min-height: 10rem;")
+// carousel.setAttribute("style", "display: flex; justify-content: center; align-items: center; min-height: 10rem;")
 
 h1.forEach(heading => {
 	heading.style.cssText = "margin: 0; font-family: 'Ubuntu', sans-serif;"
@@ -40,9 +40,9 @@ paragraphs.forEach(p => {
 });
 
 
-listItem.forEach(li => {
-	li.style.cssText = "text-align: left"
-});
+// listItem.forEach(li => {
+// 	li.style.cssText = "text-align: left"
+// });
 
 
 // Main Image Carousel
