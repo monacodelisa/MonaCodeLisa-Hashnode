@@ -11,6 +11,7 @@ const h1 = document.querySelectorAll("h1");
 const h2 = document.querySelectorAll("h2");
 const listItem = document.querySelectorAll("li");
 const links = document.querySelectorAll("a");
+const paragraphs = document.querySelectorAll("p");
 
 let link = document.createElement("a");
 link.href = "https://www.example.com";
@@ -33,6 +34,11 @@ h2.forEach(heading => {
 links.forEach(link => {
 	link.style.cssText = "color: white;"
 });
+
+paragraphs.forEach(p => {
+	p.style.cssText = "color: white; font-family: 'Ubuntu', sans-serif; margin: 0.3rem 0 0;"
+});
+
 
 listItem.forEach(li => {
 	li.style.cssText = "text-align: left"
