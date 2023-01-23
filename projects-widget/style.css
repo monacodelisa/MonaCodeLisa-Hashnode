@@ -78,3 +78,7 @@
 .carousel__indicator.current-slide {
     background-color: #5b5b5b;
 }
+
+.is-hidden {
+    display: none;
+}
