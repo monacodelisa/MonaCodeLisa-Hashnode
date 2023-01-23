@@ -61,16 +61,27 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
 prevBtn.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
     const prevSlide = currentSlide.previousElementSibling;
+    const currentDot = dotsNav.querySelector('.current-slide');
+    const prevDot = currentDot.previousElementSibling;
 
     moveToSlide(track, currentSlide, prevSlide);
+    updateDots(currentDot, prevDot);
 })
+
+const updateDots = (currentDot, targetDot) => {    
+    currentDot.classList.remove('current-slide');
+    targetDot.classList.add('current-slide')
+}
 
 // When I click right, move slides to the right
 nextBtn.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
     const nextSlide = currentSlide.nextElementSibling;
+    const currentDot = dotsNav.querySelector('.current-slide');
+    const nextDot = currentDot.nextElementSibling;
 
     moveToSlide(track, currentSlide, nextSlide);
+    updateDots(currentDot, nextDot);
 })
 
 
@@ -87,9 +98,7 @@ dotsNav.addEventListener('click', e => {
     const targetSlide = slides[targetIndex];
 
     moveToSlide(track, currentSlide, targetSlide);
-
-    currentDot.classList.remove('current-slide');
-    targetDot.classList.add('current-slide');
+    updateDots(currentDot, targetDot);
 })
 
 // Main Image
