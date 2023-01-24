@@ -101,6 +101,15 @@
     align-items: center;
 }
 
+.projects-gallery p {
+	font-size: 1.2rem;
+}
+
+.projects-gallery li {
+	font-size: 1.1rem;
+	line-height: 1.5rem;
+}
+
 .three-grid {
     width: 100%; 
     border-radius: 1rem;
