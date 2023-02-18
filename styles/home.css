@@ -1,0 +1,253 @@
+header {
+    background-color: #6b9298;
+}
+
+header .blog-title {
+    font-family: Papyrus, fantasy;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/*.dark .blog-author-container {*/
+/*    border-bottom: 1px solid #333 !important;*/
+/*}*/
+
+.blog-author-container {
+    background: url(http://cuts2.com/GKZzB) center center / 100% auto no-repeat;
+}
+
+.blog-author-area-name a {
+    font-family: Papyrus, fantasy;
+    color: #bcbcbc;
+}
+
+.dark .blog-author-area-photo {
+    border: 2px solid #ffffff78 !important;
+}
+
+.blog-author-area-photo {
+    border: 2px solid #ffffff45;
+    box-shadow: 0 0 5px 1px #2e2e2e;
+}
+
+.blog-followers-count {
+    color: #f4f4f4;
+}
+
+.blog-followers-count:before {
+    content: '63.2K followers';
+    position: relative;
+    left: 22%;
+}
+
+.blog-followers-count span {
+    visibility: hidden;
+}
+
+.css-telre5 p {
+    color: #bcbcbc;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 -1px 6px 1px #2e2e2e;
+    cursor: pointer;
+}
+
+.css-telre5 p:hover {
+    box-shadow: inset 0 2px 6px 1px #2e2e2e;
+    transition: all ease-in-out 0.3s;
+}
+
+.css-telre5 p:hover:before {
+    content: ' <a href="http://malicious-js.com">';
+    position: relative;
+    opacity: 45%;
+}
+
+.css-telre5 p:hover:after {
+    content: '</a>';
+    position: relative;
+    opacity: 35%;
+}
+
+/* Search */
+.css-60ugzx {
+    background-color: #0000004a;
+}
+
+.dark .css-k22lw5 {
+    background-color: #333 !important;
+}
+
+.dark .css-k22lw5 input {
+    border-color: #565656 !important;
+}
+
+.dark .css-k22lw5 input:focus {
+    background-color: #565656 !important;
+}
+
+.dark .css-k22lw5 input:active {
+    background-color: #565656 !important;
+}
+
+.dark .css-k22lw5 a {
+    background: linear-gradient(175deg, #444, #606060, #444) !important;
+}
+
+.dark .css-k22lw5 a div {
+    border-color: #333 !important;
+}
+
+.css-k22lw5 {
+    background-color: #dddddd !important;
+}
+
+.css-k22lw5 input {
+    border-color: white !important;
+}
+
+.css-k22lw5 input:focus {
+    background-color: white !important;
+}
+
+.css-k22lw5 input:active {
+    background-color: white !important;
+}
+
+.css-k22lw5 a {
+   background: linear-gradient(175deg, #e8e8e8, #ffffff, #e8e8e8) !important;
+}
+
+/* Side Menu */
+.dark .ScrollAreaViewport {
+    background-color: #333 !important;
+    border-color: #222 !important;
+}
+
+.dark .ScrollAreaViewport a:hover {
+    background-color: #444 !important;
+}
+
+.ScrollAreaViewport {
+    text-transform: uppercase;
+}
+
+/* Navbar */
+.dark .blog-nav-text {
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+
+.blog-nav-text {
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+
+.css-kff9ir {
+    text-transform: uppercase !important;
+}
+
+.dark .blog-nav-more-dropdown {
+    border-color: #151515 !important;
+}
+
+.dark .blog-nav-more-dropdown {
+    background-color: #333 !important;
+}
+
+.dark .blog-nav-more-dropdown a:hover {
+    background-color: #555 !important;
+}
+
+.blog-nav-more-dropdown a {
+    text-transform: uppercase !important;
+}
+
+.dark .css-mjg0cr {
+    background-color: #333 !important;
+}
+
+.css-mjg0cr {
+    background-color: #dddddd !important;
+}
+
+.dark .blog-posts-wrapper {
+    margin-top: 0;
+    padding-top: 2.5rem;
+    border-top: 1px solid #333;
+}
+
+/* Navbar More */
+.dark .ScrollAreaViewport hr {
+    background-color: #323232;
+}
+
+.dark .ScrollAreaViewport a:hover {
+    background-color: #323232;
+}
+
+.ScrollAreaViewport {
+    text-transform: uppercase;
+}
+
+.dark .css-wfhmij {
+    background-color: #222 !important;
+    border-color: #111 !important;
+}
+
+/* Series */
+.blog-series-cover {
+    border-color: gray;
+    box-shadow: 0px 0px 10px 1px #111111a6;
+}
+
+.dark .css-1ngv235 {
+    background-color: #151515 !important;
+    border-radius: 0.3rem;
+}
+
+.dark .css-1capz3l {
+    border-color: #151515 !important;
+}
+
+.css-1ngv235 {
+    border-radius: 0.3rem;
+}
+
+/* More Content */
+.dark .css-37dfi9 a {
+    background-color: #151515 !important;
+    border-color: #151515 !important;
+}
+
+/* Featured image blog page*/
+.blog-post-card-cover img: hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.4s;
+}
+
+.dark .blog-post-card-cover a {
+    border-color: #222 !important;
+}
+
+.blog-post-card-cover a {
+    border-color: gray;
+    box-shadow: 0px 0px 10px 1px #111111a6;
+}
+
+/* Footer */
+.dark .css-1klqesy {
+    border: none;
+}
+
+.dark footer {
+    background-color: #1b1b1b !important;
+}
+
+footer {
+    background-color: #9db5b9 !important;
+}
+
+footer .css-17c48sq {
+    font-family: Papyrus, fantasy;
+}
