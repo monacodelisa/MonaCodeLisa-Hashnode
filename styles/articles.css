@@ -177,14 +177,21 @@ blockquote {
     border-color: #151515 !important;
 }
 
-/* Iframe */
-iframe {
-    min-height: 35vh;
-}
-
 /* Amazon Iframe */
 .amazon {
     display: inline;
+}
+
+
+/* ChatGPT Iframe */
+#frame-chatgpt {
+    min-height: 5rem;
+    height: 5rem;
+}
+
+/* Social Iframe */
+iframe {
+    min-height: 35vh;
 }
 
 

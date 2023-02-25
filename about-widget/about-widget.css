@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+body {
+	font-family: "Ubuntu", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50vw;
+	text-align: center;
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+
+.container .heading span {
+	font-family: "Papyrus", sans-serif;
+	font-weight: bold;
+}
+
+.container .heading p:hover small {
+	visibility: visible;
+}
+
+.container .heading p small {
+	visibility: hidden;
+}
+
+p  {
+	color: gray;
+}
