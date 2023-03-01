@@ -135,6 +135,14 @@ header .blog-title {
     width: 90vw !important;
 }
 
+.blog-page-card {
+    width: 90vw !important;
+}
+
+.blog-page-content {
+    max-width: 90vw !important;
+}
+
 /* Social Iframe */
 iframe {
     min-height: 35vh;
@@ -158,10 +166,16 @@ iframe {
     text-align: center;
 }
 
+.certs-page .section .cert-image-large {
+    width: 25%;
+    margin: 1rem;
+    border-radius: 15px;
+}
+
 .certs-page .section .cert-image-five {
     width: 17%;
     margin: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 15px;
 }
 
 .certs-page .section a {

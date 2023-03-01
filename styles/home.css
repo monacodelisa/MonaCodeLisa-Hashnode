@@ -44,7 +44,7 @@ header .blog-title {
     visibility: hidden;
 }
 
-.css-telre5 p {
+.css-19f5pqd p {
     color: #bcbcbc;
     padding: 0.3rem 0.7rem;
     border-radius: 0.5rem;
@@ -52,18 +52,18 @@ header .blog-title {
     cursor: pointer;
 }
 
-.css-telre5 p:hover {
+.css-19f5pqd p:hover {
     box-shadow: inset 0 2px 6px 1px #2e2e2e;
     transition: all ease-in-out 0.3s;
 }
 
-.css-telre5 p:hover:before {
+.css-19f5pqd p:hover:before {
     content: ' <a href="http://malicious-js.com">';
     position: relative;
     opacity: 45%;
 }
 
-.css-telre5 p:hover:after {
+.css-19f5pqd p:hover:after {
     content: '</a>';
     position: relative;
     opacity: 35%;
