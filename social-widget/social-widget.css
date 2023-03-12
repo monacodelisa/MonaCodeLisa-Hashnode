@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+.divider {
+	width: 100vw;
+	color: gray;
+	margin: 2rem 0;
+	border-bottom: 2px solid gray;
+}
+
+.social-container {
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center; 
+	align-items: center;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+h1 {
+	font-family: 'Ubuntu', sans-serif; 
+    color: gray;
+	font-size: 1.5rem;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	margin-bottom: 1.5rem;
+}
+
+img {
+	width: 1.6rem; 
+	margin: 0.5rem;
+}
